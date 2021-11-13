@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Report1Controller">
+   <children>
+      <ComboBox fx:id="Report1MonthComboBox" layoutX="116.0" layoutY="51.0" prefWidth="150.0" />
+      <ComboBox fx:id="Report1TypeComboBox" layoutX="116.0" layoutY="119.0" prefWidth="150.0" />
+      <Label layoutX="49.0" layoutY="55.0" text="Month:" />
+      <Label layoutX="49.0" layoutY="123.0" text="Type:" />
+      <Label fx:id="Report1ResultLabel" layoutX="117.0" layoutY="181.0" prefHeight="20.0" prefWidth="150.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="181.0" text="Total:" />
+      <Label layoutX="8.0" layoutY="22.0" text="Total Number of Customer Appointments by Month and Type:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="Report1CalculateButton" layoutX="159.0" layoutY="246.0" mnemonicParsing="false" onAction="#calculateButtonHandler" text="Calculate" />
+      <Button fx:id="Report1BackButton" layoutX="309.0" layoutY="246.0" mnemonicParsing="false" onAction="#backButtonHandler" text="Back" />
+   </children>
+</AnchorPane>

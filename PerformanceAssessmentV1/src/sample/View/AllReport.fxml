@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AllReportController">
+   <children>
+      <Label layoutX="43.0" layoutY="28.0" text="All Reports:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="AllReportReport1Button" layoutX="37.0" layoutY="75.0" mnemonicParsing="false" onAction="#report1ButtonHandler" text="Total Number of Appointments Sorted by Month and Type" />
+      <Button fx:id="AllReportReport3Button" layoutX="174.0" layoutY="155.0" mnemonicParsing="false" onAction="#report3ButtonHandler" text="Button" />
+      <Button fx:id="AllReportBackButton" layoutX="332.0" layoutY="198.0" mnemonicParsing="false" onAction="#backButtonHandler" text="Back" />
+      <Button fx:id="AllReportReport2Button" layoutX="77.0" layoutY="113.0" mnemonicParsing="false" onAction="#report2ButtonHandler" text="Appointment Schedules Sorted by Contacts" />
+   </children>
+</AnchorPane>

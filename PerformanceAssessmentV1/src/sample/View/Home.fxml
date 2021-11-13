@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.HomeController">
+   <children>
+      <Button fx:id="HomeCustomerButton" layoutX="40.0" layoutY="136.0" mnemonicParsing="false" onAction="#customerButtonHandler" text="Manage Customers" />
+      <Button fx:id="HomeAppointmentButton" layoutX="215.0" layoutY="136.0" mnemonicParsing="false" onAction="#appointmentButtonHandler" text="Manage Appointments" />
+      <Label layoutX="79.0" layoutY="51.0" text="Welcome! User:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="HomeUsernameDisplayer" layoutX="195.0" layoutY="51.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="HomeLogoutButton" layoutX="326.0" layoutY="203.0" mnemonicParsing="false" onAction="#logoutButtonHandler" text="Logout" />
+      <Button fx:id="HomeReportButton" layoutX="50.0" layoutY="191.0" mnemonicParsing="false" onAction="#reportButtonHandler" text="Show Reports" />
+      <Label fx:id="HomeAppointmentAlert" layoutX="50.0" layoutY="95.0" prefHeight="20.0" prefWidth="314.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

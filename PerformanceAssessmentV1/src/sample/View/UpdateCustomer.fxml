@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.UpdateCustomerController">
+    <children>
+        <TextField fx:id="UpdateCustomerNameTextField" layoutX="101.0" layoutY="140.0" />
+        <TextField fx:id="UpdateCustomerAddressTextField" layoutX="101.0" layoutY="214.0" />
+        <TextField fx:id="UpdateCustomerPostalTextField" layoutX="101.0" layoutY="290.0" />
+        <TextField fx:id="UpdateCustomerPhoneTextField" layoutX="101.0" layoutY="357.0" />
+        <TextField fx:id="UpdateCustomerIDTextField" disable="true" layoutX="101.0" layoutY="72.0" />
+        <Label layoutX="39.0" layoutY="22.0" text="Update Customer">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="22.0" layoutY="76.0" text="Customer ID:" />
+        <Label layoutX="37.0" layoutY="144.0" text="Name:" />
+        <Label layoutX="32.0" layoutY="218.0" text="Address:" />
+        <Label layoutX="25.0" layoutY="294.0" text="Postal Code:" />
+        <Label layoutX="36.0" layoutY="361.0" text="Phone:" />
+        <ComboBox fx:id="UpdateCustomerCountryComboBox" layoutX="319.0" layoutY="72.0" onAction="#countryComboBoxHandler" prefWidth="150.0" promptText="Country" />
+        <ComboBox fx:id="UpdateCustomerDivisionComboBox" layoutX="319.0" layoutY="206.0" prefWidth="150.0" promptText="First Level Division" />
+        <Button fx:id="UpdateCustomerUpdateButton" layoutX="250.0" layoutY="434.0" mnemonicParsing="false" onAction="#updateButtonHandler" text="Update" />
+        <Button fx:id="UpdateCustomerBackButton" layoutX="400.0" layoutY="434.0" mnemonicParsing="false" onAction="#backButtonHandler" text="Back" />
+    </children>
+</AnchorPane>

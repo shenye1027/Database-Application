@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.CustomersController">
+   <children>
+      <TableView fx:id="CustomersTable" layoutX="41.0" layoutY="88.0" prefHeight="200.0" prefWidth="518.0">
+        <columns>
+          <TableColumn fx:id="CustomersIDCol" prefWidth="75.0" text="CustomerID" />
+          <TableColumn fx:id="CustomersNameCol" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="CustomersAddressCol" prefWidth="106.0" text="Address" />
+            <TableColumn fx:id="CustomersPostalCol" prefWidth="75.0" text="Postal Code" />
+            <TableColumn fx:id="CustomersPhoneCol" prefWidth="100.0" text="Phone" />
+            <TableColumn fx:id="CustomersDivisionCol" prefWidth="88.0" text="DivisionID" />
+        </columns>
+      </TableView>
+      <Label layoutX="41.0" layoutY="37.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="CustomersCreateButton" layoutX="131.0" layoutY="316.0" mnemonicParsing="false" onAction="#createButtonHandler" text="Create" />
+      <Button fx:id="CustomersUpdateButton" layoutX="241.0" layoutY="316.0" mnemonicParsing="false" onAction="#updateButtonHandler" text="Update" />
+      <Button fx:id="CustomersBackButton" layoutX="516.0" layoutY="329.0" mnemonicParsing="false" onAction="#backButtonHandler" text="Back" />
+      <Button fx:id="CustomersDeleteButton" layoutX="354.0" layoutY="316.0" mnemonicParsing="false" onAction="#deleteButtonHandler" text="Delete" />
+   </children>
+</AnchorPane>
